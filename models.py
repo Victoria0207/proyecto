@@ -6,7 +6,7 @@ class Persona(models.Model):
     nombre = models.CharField(max_length=60)
     apellido = models.CharField(max_length=100)
     dni=models.CharField(max_length=8)
-    fecha=models.DateField("2002","7","2")
+    fecha=models.DateField(auto_now=True)
     club = models.CharField(max_length=50)
     foto = models.ImageField(
         upload_to = 'foto/%Y/%m/%d',
