@@ -7,9 +7,11 @@
 <body>
     {% for docente in persona_list %}
     <h2> {{ docente.nombre }} <b>{{ docente.apellido }}</b> </h2>
-    <p> {{ docente.nacimiento }} </p>
-    {% if docentead %}
-    <p> {{ docente.edad}} </p>
+    <p> {{ docente.club }} </p>
+    <p> {{ docente.fecha }} </p>
+    <p> {{ docente.dni }} </p>
+    <p> {{ docente.foto}} </p>
+    {% if docente %}
     {% endif %}
     <div>
         {% if docente.foto %}
